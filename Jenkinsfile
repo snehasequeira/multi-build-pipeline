@@ -24,10 +24,5 @@ pipeline {
                 junit 'target/surefire-reports/*.xml'
             }
         }
-        stage('archive'){
-            steps{
-                archiveArtifacts artifacts: 'target/*.jar'
-            }
-        }
     }
 }
